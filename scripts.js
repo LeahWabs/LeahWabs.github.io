@@ -117,7 +117,7 @@ function fermealways(){
 }
 // cette fonction permet l'ouverture de la boite de dialog avant l'appuie du bouton ne plus afficher
 function open(){
-  //localStorage.removeItem('modalCacher');
+  localStorage.removeItem('modalCacher');
   dialog.showModal();
 }
 // cette fonction permet l'ouverture de la boite de dialog de la fin
