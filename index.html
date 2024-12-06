@@ -8,62 +8,103 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <section class="memory-game">
-    <div class="memory-card" data-framework="aurelia">
-      <img class="front-face" src="../img/aurelia.svg" alt="Aurelia" />
-      <img class="back-face" src="../img/js-badge.svg" alt="JS Badge" />
-    </div>
-    <div class="memory-card" data-framework="aurelia">
-      <img class="front-face" src="../img/aurelia.svg" alt="Aurelia" />
-      <img class="back-face" src="../img/js-badge.svg" alt="JS Badge" />
-    </div>
+  <div id="count">
+   <p id="phrase">Nombre de chance:  </p><h1 id="nombre">10</h1>
+  </div>
+  <div id="all">
+    <section id="jeu" class="memory-game">
+      <div class="memory-card" data-framework="ginny">
+        <img class="front-face" src="images/ginny.jpg" alt="ginny" />
+        <img class="back-face" src="images/netflix.jpg" alt="netflix" />
+      </div>
+      <div class="memory-card" data-framework="ginny">
+        <img class="front-face" src="images/ginny.jpg" alt="ginny" />
+        <img class="back-face" src="images/netflix.jpg" alt="netflix" />
+      </div>
+  
+      <div class="memory-card" data-framework="squid">
+        <img class="front-face" src="images/squid game.jpg" alt="squid" />
+        <img class="back-face" src="images/netflix.jpg" alt="netflix" />
+      </div>
+      <div class="memory-card" data-framework="squid">
+        <img class="front-face" src="images/squid game.jpg" alt="squid" />
+        <img class="back-face" src="images/netflix.jpg" alt="netflix" />
+      </div>
+  
+      <div class="memory-card" data-framework="woman">
+        <img class="front-face" src="images/woman.webp" alt="woman" />
+        <img class="back-face" src="images/netflix.jpg" alt="netflix" />
+      </div>
+      <div class="memory-card" data-framework="woman">
+        <img class="front-face" src="images/woman.webp" alt="woman" />
+        <img class="back-face" src="images/netflix.jpg" alt="netflix" />
+      </div>
+  
+      <div class="memory-card" data-framework="wednesday">
+        <img class="front-face" src="images/wednesday.jpg" alt="wednesday" />
+        <img class="back-face" src="images/netflix.jpg" alt="netflix" />
+      </div>
+      <div class="memory-card" data-framework="wednesday">
+        <img class="front-face" src="images/wednesday.jpg" alt="wednesday" />
+        <img class="back-face" src="images/netflix.jpg" alt="netflix" />
+      </div>
+  
+      <div class="memory-card" data-framework="XO">
+        <img class="front-face" src="images/XO-Kitty.avif" alt="XO" />
+        <img class="back-face" src="images/netflix.jpg" alt="netflix" />
+      </div>
+      <div class="memory-card" data-framework="XO">
+        <img class="front-face" src="images/XO-Kitty.avif" alt="XO" />
+        <img class="back-face" src="images/netflix.jpg" alt="netflix" />
+      </div>
+  
+      <div class="memory-card" data-framework="you">
+        <img class="front-face" src="images/You.jpg" alt="you" />
+        <img class="back-face" src="images/netflix.jpg" alt="netflix" />
+      </div>
+      <div class="memory-card" data-framework="you">
+        <img class="front-face" src="images/You.jpg" alt="you" />
+        <img class="back-face" src="images/netflix.jpg" alt="netflix" />
+      </div>
+    </section>
 
-    <div class="memory-card" data-framework="vue">
-      <img class="front-face" src="../img/vue.svg" alt="Vue" />
-      <img class="back-face" src="../img/js-badge.svg" alt="JS Badge" />
-    </div>
-    <div class="memory-card" data-framework="vue">
-      <img class="front-face" src="../img/vue.svg" alt="Vue" />
-      <img class="back-face" src="../img/js-badge.svg" alt="JS Badge" />
-    </div>
+    <dialog id="modal" class="modal">
+        <div id="haut">
+          <h1>Projet personnel</h1><hr>
+          <p> <i> Design web gr.2-Automne 2024</i></p>
+      </div>
+      <div id="milieu">
+          <div id="mots">
+              <h2>Réalisé par</h2>
+          <p>Leah Kungne</p>
+          <h2> <i>Inspiration</i> </h2>
+          <a href="#"> <i> https://codesandbox.io/p/sandbox/z9fhk</i></a>
+          </div>
+          <div id="image">
+            <img src="images/megaman.png" alt="">
+          </div>
+      </div>
+      <div id="fin">
+          <button class="button" id="button">Fermer la fenetre</button><br>
+          <p class="afficher" id="afficher"><i>Ne plus afficher cette fenetre</i></p>
+      </div>
+    </dialog>
+    <dialog id="restart" class="restart">
+      <h1 id="end"><b>FIN DU JEU!!!</b></h1><br>
+      <p>Veut tu rejouer?</p>
+      <button class="yes" id="yes">Oui Biensur</button>
+      <button class="no" id="no">Non une prochaine fois</button>
+    </dialog>
+  </div>
+    
+    
 
-    <div class="memory-card" data-framework="angular">
-      <img class="front-face" src="../img/angular.svg" alt="Angular" />
-      <img class="back-face" src="../img/js-badge.svg" alt="JS Badge" />
-    </div>
-    <div class="memory-card" data-framework="angular">
-      <img class="front-face" src="../img/angular.svg" alt="Angular" />
-      <img class="back-face" src="../img/js-badge.svg" alt="JS Badge" />
-    </div>
 
-    <div class="memory-card" data-framework="ember">
-      <img class="front-face" src="../img/ember.svg" alt="Ember" />
-      <img class="back-face" src="../img/js-badge.svg" alt="JS Badge" />
-    </div>
-    <div class="memory-card" data-framework="ember">
-      <img class="front-face" src="../img/ember.svg" alt="Ember" />
-      <img class="back-face" src="../img/js-badge.svg" alt="JS Badge" />
-    </div>
+    
+       
 
-    <div class="memory-card" data-framework="backbone">
-      <img class="front-face" src="../img/backbone.svg" alt="Backbone" />
-      <img class="back-face" src="../img/js-badge.svg" alt="JS Badge" />
-    </div>
-    <div class="memory-card" data-framework="backbone">
-      <img class="front-face" src="../img/backbone.svg" alt="Backbone" />
-      <img class="back-face" src="../img/js-badge.svg" alt="JS Badge" />
-    </div>
-
-    <div class="memory-card" data-framework="react">
-      <img class="front-face" src="../img/react.svg" alt="React" />
-      <img class="back-face" src="../img/js-badge.svg" alt="JS Badge" />
-    </div>
-    <div class="memory-card" data-framework="react">
-      <img class="front-face" src="../img/react.svg" alt="React" />
-      <img class="back-face" src="../img/js-badge.svg" alt="JS Badge" />
-    </div>
-  </section>
+    
+  
 
   <script src="scripts.js"></script>
 </body>
-</html>
